@@ -2,16 +2,14 @@
 
 In CPU scheduling, there are many criterias to check when considering the best scheduling algorithm such as throughput, turnaround time, waiting time, load average, and response time. In this project, we have chosen 3 different scheduling algorithms and the performance of each algorithm will be determined. It is best to choose the most effective algorithms out of all 3 to save resources.
 
-Our chosen algorithms are  First Come First Serve (FCFS), Priority, and Shortest Job First (SJF) scheduling.
-
+Our chosen algorithms are  First Come First Serve (FCFS), Priority, and Shortest Job First (SJF) scheduling.<br>
 •FCFS scheduling executes processes that arrive first in the queue and the first data that have been executed will leave the queue first.<br>
 •Priority scheduling executes processes that have a higher priority first.<br>
 •SJF scheduling executes processes that have a shorter burst time or duration.
 
 # Consideration
 
-We have considered a few scenarios that would provide more clarity for each scheduling algorithm and made our input accordingly.
-
+We have considered a few scenarios that would provide more clarity for each scheduling algorithm and made our input accordingly.<br>
 •In FCFS scheduling, it only depends on which class comes first in the array.<br>
 •In priority scheduling, classes that have the same priority need to be considered.<br>
 •In SJF scheduling, classes that have the same duration need to be considered.
