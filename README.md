@@ -1,6 +1,7 @@
-# CSC 3401 Operating Systems (Section 2)
 # ClassScheduling Assignment
 Finding the optimum class scheduling algorithm
+
+## CSC 3401 Operating Systems (Section 2)
 
 ## Group members
 
