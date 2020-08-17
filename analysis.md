@@ -62,7 +62,7 @@ In a non-preemptive SJF scheduling, the scheduler selects the process from the w
 
 The data for SJF scheduling is as follows:
 | Process | Arrival Time | Burst Time | Waiting Time | Turn Around Time
-| ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
 | 2201 | 1 | 3 | 0 | 3 |
 | 1103 | 3 | 1 | 1 | 2 |
 | 3401 | 2 | 2 | 3 | 5 |
