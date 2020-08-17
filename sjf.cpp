@@ -48,7 +48,7 @@ int main() {
    arrangeArrival(num, mat);
    completionTime(num, mat);
 
-   cout<<"Process ID\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n";
+   cout<<"Process\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n";
    
    for(int i=0; i<num; i++) {
       cout << mat[i][0]<<"\t\t"<<mat[i][1]<<"\t\t"<<mat[i][2]<<"\t\t"<<mat[i][4]<<"\t\t"<<mat[i][5]<<"\n";
