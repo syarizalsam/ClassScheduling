@@ -1,10 +1,6 @@
-/* Simple C++ program for implementation 
-of FCFS scheduling */
-
 #include<iostream>
-
 using namespace std;
- 
+
 // function to find the waiting time for all processes
 void findWaitingTime(int processes[], int n, int bt[], int wt[])
 {
@@ -41,31 +37,30 @@ void findAverageTime( int processes[], int n, int bt[])
     findTurnAroundTime(processes, n, bt, wt, tat);
  
     // display processes along with all details
-    cout << "Processes  "<< " Burst time  "<< " Waiting time  " << " Turn around time\n";
+    cout << "Processes  "<< " Burst time  "<< " Waiting time  " << " Turn around time\n\n";
  
     // calculate total waiting time and total turn around time
     for (int i = 0; i < n; i++)
     {
         total_wt = total_wt + wt[i];
         total_tat = total_tat + tat[i];
-        cout << "   " << i+1 << "\t\t" << bt[i] <<"\t    "<< wt[i] <<"\t\t  " << tat[i] <<endl;
+        cout << "   " << processes[i] << "\t\t" << bt[i] <<"\t    "<< wt[i] <<"\t\t  " << tat[i] <<endl;
     }
  
-    cout << "Average waiting time = "<< (float)total_wt / (float)n;
+    cout << "\nAverage waiting time = "<< (float)total_wt / (float)n;
     cout << "\nAverage turn around time = "<< (float)total_tat / (float)n;
 }
- 
+
 // main function
-int main()
-{
-    // process ids
-    int processes[] = { 1, 2, 3, 4};
-    int n = sizeof processes / sizeof processes[0];
- 
-    // burst time of all processes
-    int  burst_time[] = {21, 3, 6, 2};
- 
+int main() 
+{ 
+    //process id's 
+    int processes[] = {2201,3401,1103};
+    int n = sizeof processes / sizeof processes[0]; 
+  
+    //Burst time of all processes 
+    int  burst_time[] = {3, 2, 1}; 
+  
     findAverageTime(processes, n,  burst_time);
-    
-    return 0;
-}
+    return 0; 
+} 
